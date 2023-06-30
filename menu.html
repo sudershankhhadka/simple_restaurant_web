@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.titlerestaurant{
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkgoldenrod;
+    text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.5),
+    -2px -2px 4px rgba(255, 255, 255, 0.5);
+    cursor:pointer;
+     
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 80px;
+    background-color: black;
+    }
+    .menu li{
+        list-style: none;
+        display: inline-block;
+        
+    }
+.menu li a{
+    text-decoration: none;
+    font-size: 30px;
+    padding: 20px;
+    font-weight: 500;
+    transition: .4s ease;
+    /* margin-right: 30px; */
+}
+.menu li a:hover{
+    color: crimson;
+    padding:8px 10px;
+    border: 2px solid white;
+}
+/* menu */
+.container1{
+    background-image:url(grey.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 12px ;
+    /* color: white; */
+    height: 100vh;
+    width: 100%;
+}
+.section-title{
+    text-align: center;
+    margin-bottom: 60px;
+
+}
+.section-title h4{
+    font-size:40px ;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+.main{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.items{
+    flex-basis: 30%;
+}
+.image{
+    width:35%;
+    height:30%;
+}
+
+.title{
+    background-color: orange;
+    text-align: center;
+    padding:10px 0;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom:30px ;
+}
+.single-menu{
+border: 1px solid white;
+padding:25px;
+text-align:center ;
+position: relative;
+margin-bottom: 20px;
+}
+.single-menu:hover img{
+border-radius: 50%;
+}
+.single-menu:hover{
+    border-color: #ff7720;
+    border-radius: 7px;
+}
+.single-menu span{
+    position: absolute;
+    right: 0;
+    bottom:0;
+    background-color:orange ;
+    padding:8px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 15px,0,0,0;
+}
+single-menu img{
+    max-width: 80px;
+    border:1px solid black ;
+    padding: 3px;
+    transition:.3s;
+}
+.single-menu h4 {
+    border-bottom: 1px dashed white;
+    margin:10px 0;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    font-size: 24px;
+}
+.single-menu a{
+    display: inline-block;
+    color: #ff7720;
+    text-transform: uppercase;
+    /* margin-top: 25px; */
+
+}
+a{
+    color: crimson;
+    background-color: black;
+    font-weight: 300;
+    text-decoration: none;
+}
+/* footer */
+footer{
+    background-color: black;
+    
+
+}
+.footerContainer{
+    width: 100%;
+    padding:40px 30px 20px;
+    height:3%;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 8px;
+    background-color: white;
+    margin: 7px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size:2em ;
+    color: black;
+    opacity: 0.9;
+}
+   .socialIcons a:hover{
+    background-color:#111;
+    transition:0.5s;
+
+   }
+   .socialIcons a:hover i {
+    color: white;
+    transition:0.5s;
+   }
+   .footerBottom{
+    background-color: black;
+    text-align: center;
+    /* padding: 20px; */
+}
+   .footerBottom p{
+       color:white;
+    }
+    .designer{
+        opacity:0.7;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin:0px 5px ;
+    }
+    
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="nav-bar">
+        <h1 class="titlerestaurant">Chop Chop Restaurant </h1>
+        
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="login.html">Log in</a></li>
+            </ul>
+         </nav>
+    </div>
+  <!-- menu -->
+   <div class="container1">
+    <section class="menus-area">
+        <div class="section-title">
+            <h4>MENU</h4>
+        
+        </div>
+        <div class="main">
+            <div class="items">
+                <div class="title">
+               Breakfast
+                </div>
+                <div class="single-menu">
+                    <span>Rs 150</span>
+                  <img  class= "image" src="sunny.jpg" alt=""> 
+                   <h4>Sunny side up with avocado</h4>
+                   
+                   <a href="">order now</a>
+                </div>
+                <div class="single-menu">
+                    <span>Rs 170</span>
+                  <img  class= "image" src="breakfast 2.jpg" alt=""> 
+                   <h4>Pancakes</h4>
+                   
+                   <a href="">order now</a>
+                </div>
+            </div>
+            <div class="items">
+                <div class="title">
+               Lunch
+                </div>
+                <div class="single-menu">
+                    <span>Rs 200</span>
+                  <img class= "image" src="lunch1.jpg" alt=""> 
+                   <h4>Hamburger</h4>
+                
+                   <a href="">order now</a>
+                </div>
+                <div class="single-menu">
+                    <span>Rs 180</span>
+                  <img  class="image" src="maccheese.jpg" alt=""> 
+                   <h4>Macroni and Cheese</h4>
+                  
+                   <a href="">order now</a>
+                </div>
+            </div>
+            <div class="items">
+                <div class="title">
+               Dinner
+                </div>
+                <div class="single-menu">
+                    <span>Rs 250</span>
+                  <img  class= "image" src="dinner1.jpg" alt=""> 
+                   <h4>Steak</h4>
+                   
+                   <a href="">order now</a>
+                </div>
+                <div class="single-menu">
+                    <span>Rs 200</span>
+                  <img  class= "image" src="dinner2.jpg" alt=""> 
+                   <h4>Fish and chips</h4>
+                  
+                   <a href="">order now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+        
+    
+  </div>
+  <footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+       
+    </div>
+    <div class="footerBottom">
+        <p>Copyright &copy;2023; Designed by <span class="designer">Zion</span></p>
+    </div>
+</footer>
+</body>
+
+</html>
